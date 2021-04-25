@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard StarWars</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="lateral__menu">
+            <div class="imgstarwars">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+            <div class="menu__itens">
+                <ul>
+                    <li>
+                        <a id="filmesTable" href="#filmes-table">
+                        <img src="./assets/dashboard.svg" alt="Dashboard">
+                            <p>Filmes</p>
+                        </a>
+                    </a>
+                    </li>
+                    <li>
+                        <a id="personagensTable" href="#personagens-table">
+                            <img src="./assets/personagens.svg" alt="Personagens">
+                            <p>Personagens</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="planetasTable" href="#planetas-table">
+                            <img src="./assets/planetas.svg" alt="Planetas">
+                            <p>Planetas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="navesTable" href="#naves-table">
+                            <img src="./assets/nave.svg" alt="Naves Espaciais">
+                            <p>Naves e Veiculos</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="settings">
+                <i data-feather="settings"></i>
+                <p>Configurações</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="card__header">
+                <div class="card card--small">
+                    <div class="card__content">
+                        <div class="card__info">
+                            <p>Personagens</p>
+                            <h2 id="personagens"></h2>
+                        </div>
+                        <img src="./assets/personagens-black.svg" alt="Personagens">
+                    </div>
+                    </div>
+                    <div class="card  card--large">
+                    <div class="card__container">
+                        <div class="card__content">
+                            <div class="card__info">
+                                <p>Naves</p>
+                            <h2 id="naves"></h2>
+                        </div>
+                        <img src="./assets/nave-black.svg" alt="naves">
+                                
+                        </div>
+                        <div class="card__content">
+                            <div class="card__info">
+                                <p>Veiculos</p>
+                                <h2 id="vehicles"></h2>
+                            </div>
+                            <img src="./assets/vehicles.svg" alt="vehicles">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card card--small">
+                    <div class="card__content">
+                        <div class="card__info">
+                            <p>Planetas</p>
+                                <h2 id="planetas"></h2>
+                            </div>
+                            <img src="./assets/planetas-black.svg" alt="planetas">
+                    </div>
+                    </div>
+            </div>
+        
+        <div class="content--info">
+            <div class="table">
+                <h5>Últimos filmes</h5>
+                <p>Saiba os últimos lançamentos da marca</p>
+                <table>
+                    <thead id="tableHead"></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+    
+            <div class="chart">
+                <div id="piechart" style="width: 300px; height: 300px;"></div>
+            </div>
+        </div>
+        
+            
+        </div>
+    </div>
+    <script>feather.replace()</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

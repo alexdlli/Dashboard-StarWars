@@ -1,670 +1,637 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 html {
- height: 100vh;
- width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-
 .container {
-    position: relative;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
 .lateral__menu {
-    position: absolute;
-    z-index: 99;
-    background: #000;
-    color: #fff;
-    width: 250px;
-    height: 100vh;
+  position: absolute;
+  z-index: 99;
+  background: #000;
+  color: #fff;
+  width: 250px;
+  height: 100vh;
 
-    padding: 20px 0;
+  padding: 20px 0;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .lateral__menu ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 0;
-    transition: 1s all
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  transition: 1s all;
+}
+
+.lateral__menu ul li button {
+  background: transparent;
+  color: white;
+  border: none;
 }
 
 .lateral__menu ul li p {
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 }
 
 .lateral__menu ul li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .lateral__menu ul li img {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.lateral__menu .menu__itens li:hover{
-    transform: scale(1.1);
-    transition: 1s all
+.lateral__menu .menu__itens li:hover {
+  transform: scale(1.1);
+  transition: 1s all;
 }
 
 a:-webkit-any-link {
-    color: #FFF ;
+  color: #fff;
 }
 
-
-
-
 .settings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s all
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all;
 }
 
 .settings svg {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.settings:hover{
-    transform: scale(1.1);
-    transition: 1s all;
+.settings:hover {
+  transform: scale(1.1);
+  transition: 1s all;
 }
 
 .content {
-    height: 100vh;
-    background: #f5f6fa;
-    width: 100vw;
+  height: 100vh;
+  background: #f5f6fa;
+  width: 100vw;
 }
 
 .card {
-    background: #fff;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
-    border-radius: 16px;
-    margin: 0 20px;
-    height: 132px;
+  background: #fff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin: 0 20px;
+  height: 132px;
 }
 
 .card--small {
-    width: 240px;
-    display: flex;
-    align-items: center;
+  width: 240px;
+  display: flex;
+  align-items: center;
 }
 
 .card--large {
-    width: 464px;
+  width: 464px;
 }
 
 .card .card__content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
 }
 
 .card .card__container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
-
 
 .card__header {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-
 .card__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card__info p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .card__info h2 {
-    font-size : 54px;
-    font-weight: bold;
-    color: #ffb433;
+  font-size: 54px;
+  font-weight: bold;
+  color: #ffb433;
 }
 
 .card--large .card__container .card__content:first-child {
-    border-right: 1px solid #111;
+  border-right: 1px solid #111;
 }
 
 .table {
-    margin: 0 20px;
-    width: 642px;
-    height: 450px;
-    padding: 34px;
+  transition: 0.5s all;
+  content-visibility: auto;
+  margin: 0 20px;
+  width: 642px;
+  height: 450px;
+  padding: 34px;
 
-    background: #fff;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, .25);
-    border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
 
-    text-align: left;    
+  text-align: left;
 }
 
 .table h5 {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
-
 .table table {
-    margin-top: 30px;
-    width: 100%;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .table table th {
-    border-bottom: 1px solid #5e5e5e;
-    padding: 10px 0;
+  border-bottom: 1px solid #5e5e5e;
+  padding: 10px 0;
 }
 
 .table table td {
-    border-bottom: 1px solid #e9e9e9;
-    padding: 10px 0;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 10px 0;
 }
 
-.content--info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 50px;
+.content--info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 50px;
 }
 .chart {
-    display: flex;
-    align-items: center;
-    width: 400px;
-    height: 450px;
-    background: #fff;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, .25);
-    border-radius: 16px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 450px;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
 }
 
 @media (max-width: 2560px) {
-    .content {
-        width: 100vw;
-    }
+  .content {
+    width: 100vw;
+  }
 
-    .chart {
-        justify-content: center;
-    }
+  .chart {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1620px) {
-    .content {
-        position: fixed;
-        width: 85vw;
-        right: 0;
-    }
+  .content {
+    position: fixed;
+    width: 85vw;
+    right: 0;
+  }
 
-    .chart {
-        justify-content: center;
-    }
+  .chart {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1380px) {
-    body{
-        margin-bottom: 55px;
-    }
+  body {
+    margin-bottom: 55px;
+  }
 
-    
-    .lateral__menu{
-        position: fixed;
-        z-index: 99;
-        bottom: 0;
-        left: 0;
-        height: calc(100vh - 84vh);
-        width: 100%;
-        padding: 0;
-        margin: auto;
+  .lateral__menu {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    height: calc(100vh - 84vh);
+    width: 100%;
+    padding: 0;
+    margin: auto;
 
-        display: flex;
-        align-items: stretch;
-        justify-content: space-around;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+  }
 
-}
+  .lateral__menu img {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
-    .lateral__menu img {
-        width: 60px;
-        height: 60px;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
+  .lateral__menu .imgstarwars {
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: black;
+  }
 
-    .lateral__menu .imgstarwars {
-        display: flex;
-        width: 100vw;
-        margin: 0;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        background-color: black;
-    }
+  .lateral__menu .imgstarwars img {
+    width: 15vw;
+  }
 
-    .lateral__menu .imgstarwars img {
-        width: 15vw;
-    }
+  .lateral__menu .menu__itens ul {
+    margin: auto 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    
-
-    .lateral__menu .menu__itens ul{
-        margin: auto 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
- .lateral__menu .menu__itens ul li{
-     margin: auto;
+  .lateral__menu .menu__itens ul li {
+    margin: auto;
 
     justify-content: space-between;
+  }
 
- }
-
- .card__header {
+  .card__header {
     margin-top: 50px;
- }
+  }
 
- .table {
+  .table {
     margin: 0px 10px 200px 1px;
     width: 800px;
     height: 440px;
- }
+  }
 
- .chart {
+  .chart {
     margin: 0px 10px 200px 1px;
     width: 400px;
     height: 440px;
- }
- 
- .content {
+  }
+
+  .content {
     position: fixed;
     width: 100%;
-}
-
+  }
 }
 
 @media (max-width: 1014px) {
-    body{
-        margin-bottom: 55px;
-    }
+  body {
+    margin-bottom: 55px;
+  }
 
-    .lateral__menu{
-        position: fixed;
-        z-index: 99;
-        bottom: 0;
-        left: 0;
-        height: calc(100vh - 84vh);
-        width: 100%;
-        padding: 0;
-        margin: auto;
+  .lateral__menu {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    height: calc(100vh - 84vh);
+    width: 100%;
+    padding: 0;
+    margin: auto;
 
-        display: flex;
-        align-items: stretch;
-        justify-content: space-around;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+  }
 
-}
+  .lateral__menu img {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
-    .lateral__menu img {
-        width: 60px;
-        height: 60px;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
+  .lateral__menu .imgstarwars {
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: black;
+  }
 
-    .lateral__menu .imgstarwars {
-        display: flex;
-        width: 100vw;
-        margin: 0;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        background-color: black;
-    }
+  .lateral__menu .imgstarwars img {
+    width: 15vw;
+  }
 
-    .lateral__menu .imgstarwars img {
-        width: 15vw;
-    }
+  .lateral__menu .menu__itens ul {
+    margin: auto 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    
-
-    .lateral__menu .menu__itens ul{
-        margin: auto 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
- .lateral__menu .menu__itens ul li{
-     margin: auto;
+  .lateral__menu .menu__itens ul li {
+    margin: auto;
 
     justify-content: space-between;
+  }
 
- }
-
- .card__header {
+  .card__header {
     margin-top: 50px;
- }
+  }
 
- .table {
+  .table {
     margin: 0px 10px 200px 1px;
     width: 800px;
     height: 680px;
- }
+  }
 
- .chart {
+  .chart {
     margin: 0px 10px 200px 1px;
     width: 400px;
     height: 680px;
- }
+  }
 
- .content {
+  .content {
     height: 1050px;
     position: absolute;
     width: 100vw;
     right: 0;
- }
+  }
 
-.content--info{
- margin-bottom: 50px;
- }
-
-
-
+  .content--info {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 750px) {
-    body{
-        margin-bottom: 55px;
-    }
+  body {
+    margin-bottom: 55px;
+  }
 
-    .lateral__menu{
-        position: fixed;
-        z-index: 99;
-        bottom: 0;
-        left: 0;
-        height: calc(100vh - 80vh);
-        width: 100%;
-        padding: 0;
-        margin: auto;
+  .lateral__menu {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    height: calc(100vh - 80vh);
+    width: 100%;
+    padding: 0;
+    margin: auto;
 
-        display: flex;
-        align-items: stretch;
-        justify-content: space-around;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+  }
 
-}
+  .lateral__menu img {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
+  .lateral__menu .imgstarwars {
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: black;
+  }
 
+  .lateral__menu .imgstarwars img {
+    width: 30vw;
+  }
 
-    .lateral__menu img {
-        width: 60px;
-        height: 60px;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
+  .lateral__menu .menu__itens ul {
+    margin: auto 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    .lateral__menu .imgstarwars {
-        display: flex;
-        width: 100vw;
-        margin: 0;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        background-color: black;
-    }
-
-    .lateral__menu .imgstarwars img {
-        width: 30vw;
-    }
-
-    
-
-    .lateral__menu .menu__itens ul{
-        margin: auto 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
- .lateral__menu .menu__itens ul li{
-     margin: auto;
+  .lateral__menu .menu__itens ul li {
+    margin: auto;
 
     justify-content: space-between;
+  }
 
- }
-
- .card {
-     
+  .card {
     justify-content: center;
     align-items: center;
     padding: 10px;
     margin: 15px 15px;
     height: 132px;
- }
+  }
 
- .card:first-child{
-     margin-top: 60px;
- }
+  .card:first-child {
+    margin-top: 60px;
+  }
 
-.card .card__content{
+  .card .card__content {
     margin: 5px;
-}
+  }
 
- .card--large {
+  .card--large {
     height: 175px;
     width: 240px;
     margin: 10px 0;
-}
+  }
 
-.content {
+  .content {
     height: 945px;
     position: absolute;
-}
+  }
 
-.card__header {
+  .card__header {
     margin-top: 10px;
-}
+  }
 
-
-.content--info{
+  .content--info {
     flex-direction: column-reverse;
-}
+  }
 
-.card__header{
+  .card__header {
     align-items: center;
     width: 100vw;
     flex-direction: column;
-}
+  }
 
-.card .card__container {
+  .card .card__container {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.card--large .card__container .card__content:first-child {
+  .card--large .card__container .card__content:first-child {
     border-right: none;
     border-bottom: 1px solid #111;
-}
+  }
 
-.table {
+  .table {
     margin: 20px 20px 200px 20px;
     width: auto;
     height: auto;
-}
+  }
 
-.chart {
+  .chart {
     width: 300px;
     height: 300px;
     margin: 0px 10px 10px 1px;
-
-}
-
-
+  }
 }
 
 @media (max-width: 375px) {
-    body{
-        margin-bottom: 55px;
-    }
+  body {
+    margin-bottom: 55px;
+  }
 
-    .lateral__menu{
-        position: fixed;
-        z-index: 99;
-        bottom: 0;
-        left: 0;
-        height: calc(100vh - 80vh);
-        width: 100%;
-        padding: 0;
-        margin: auto;
+  .lateral__menu {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    height: calc(100vh - 80vh);
+    width: 100%;
+    padding: 0;
+    margin: auto;
 
-        display: flex;
-        align-items: stretch;
-        justify-content: space-around;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+  }
 
-}
+  .lateral__menu img {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
+  .lateral__menu .imgstarwars {
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: black;
+  }
 
+  .lateral__menu .imgstarwars img {
+    width: 30vw;
+  }
 
-    .lateral__menu img {
-        width: 60px;
-        height: 60px;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
+  .lateral__menu .menu__itens ul {
+    margin: auto 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    .lateral__menu .imgstarwars {
-        display: flex;
-        width: 100vw;
-        margin: 0;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        background-color: black;
-    }
-
-    .lateral__menu .imgstarwars img {
-        width: 30vw;
-    }
-
-    
-
-    .lateral__menu .menu__itens ul{
-        margin: auto 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
- .lateral__menu .menu__itens ul li{
-     margin: auto;
+  .lateral__menu .menu__itens ul li {
+    margin: auto;
 
     justify-content: space-between;
+  }
 
- }
-
- .card {
-     
+  .card {
     justify-content: center;
     align-items: center;
     padding: 10px;
     margin: 15px 15px;
     height: 132px;
- }
+  }
 
- .card:first-child{
-     margin-top: 60px;
- }
+  .card:first-child {
+    margin-top: 60px;
+  }
 
-.card .card__content{
+  .card .card__content {
     margin: 5px;
-}
+  }
 
- .card--large {
+  .card--large {
     height: 175px;
     width: 240px;
     margin: 10px 0;
-}
+  }
 
-
-.content{
+  .content {
     height: 935px;
-} 
+  }
 
-.content--info{
+  .content--info {
     flex-direction: column-reverse;
-}
+  }
 
-.card__header{
+  .card__header {
     align-items: center;
     width: 100vw;
     flex-direction: column;
-}
+  }
 
-.card .card__container {
+  .card .card__container {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.card--large .card__container .card__content:first-child {
+  .card--large .card__container .card__content:first-child {
     border-right: none;
     border-bottom: 1px solid #111;
-}
+  }
 
-.table {
+  .table {
     margin: 20px 20px 200px 20px;
     width: auto;
     height: auto;
-}
+  }
 
-.chart {
+  .chart {
     width: 300px;
     height: 300px;
-}
-
-
+  }
 }

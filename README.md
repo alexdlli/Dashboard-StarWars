@@ -2,6 +2,8 @@
 
 ## WELLCOME🎈
 ### This is a Dashboard StarWars APP. 
+![Aplication](https://alex-dll.github.io/Dashboard-StarWars/)
+
 In it we use several concepts of CSS as:
 - Flexbox
 > - Simple concepts since flex-direction, justify-content e align-itens.
